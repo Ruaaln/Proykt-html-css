@@ -1,0 +1,56 @@
+/* -------------<<  PROFIL IMAGE  >>----------- */
+.profil-img::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 300%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.827), rgba(1, 225, 255, 0.852));
+    top: -90%;
+    left: -130%;
+    transform: rotate(45deg);
+    opacity: 0.5;
+    transition: all 0s ease;
+    z-index: 1;
+}
+
+.profil-img:hover::before {
+    bottom: 50%;
+    left: 150%;
+    transition: all 1s ease;
+}
+
+/* -------------<<  BODY CART  >>----------- */
+.body-cart,
+.video-box .img-box,
+.main-content  .img-box,
+.img-box-work {
+    transition: all .1s ease;
+}
+
+.body-cart:hover,
+.video-box .img-box:hover,
+.main-content  .img-box:hover,
+.img-box-work:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+    transform: scale(1.015);
+}
+
+.body-cart *,
+.video-box-item *,
+.info-cart>p {
+    transition: .1s ease-in-out;
+}
+
+.body-cart *:hover,
+.video-box-item *:hover,
+.info-cart>p:hover,
+.info-cart>header>h1:hover,
+.info-box > p:hover,
+.info-one p:hover,
+.info-box-work div:nth-child(2):hover{
+    text-decoration: underline;
+    color: rgb(54, 105, 124);
+}
+
+/* -------------<<  VIDEO CONTAINER >>----------- */

@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+}
+
+body {
+    height: 100lvh;
+}
+
+/* -----------------<< HEADER >>---------------------- */
+
+body>header {
+    display: flex;
+    justify-content: right;
+}
+
+body>header>nav ul {
+    display: flex;
+    gap: 30px;
+    font-weight: 700;
+    padding: 30px;
+}
+
+body>header>nav ul li a {
+    transition: .3s;
+}
+
+body>header>nav ul li a:hover {
+    border-bottom: 1px solid #70c7e9;
+    filter: drop-shadow(0px 20px 10px);
+}
+
+
+/* -----------------<< MAIN {CARTS}>>---------------------- */
+
+body>.main-content {
+    display: flex;
+    margin: auto;
+    max-width: 1600px;
+    flex-direction: column;
+    padding: 0px 12%;
+    transition: .2s;
+}
+.main-content > h1{
+    font-size: 1.8em;
+}
+
+.boxs {
+    display: flex;
+    max-height: 200px;
+    overflow: hidden;
+    padding: 50px 0px 100px 0px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.img-box {
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 250px;
+    max-height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+    aspect-ratio: 3/2;
+    border: 1px solid black;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -----------------<< MAIN {INFO > FONT}>>---------------------- */
+.boxs .info-box * {
+    margin: 10px 0px;
+}
+
+.boxs .info-box {
+    padding: 10px 20px;
+}
+
+.info-box>b {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.info-box>div b:nth-child(1) {
+    padding: 5px 15px;
+    font-size: .8em;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+.info-box>div b:nth-child(2) {
+    margin-left: 5%;
+    color: #8695A4;
+}
+
+.info-box>p {
+    font-size: .9em;
+}
+
+.box5 {
+    display: none;
+}
+
+/* -----------------<< FOOTER {FOOTER, ICONS}>>---------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 300px 0px 100px 0px;
+}
+footer .social-media, .social-media > i{
+    display: flex;
+    font-size: 1.5em;
+    gap: 30px;
+    margin-bottom: 15px;
+    transition: .2s ease-in-out;
+}
+
+.social-media i:hover {
+    transform: translateY(-10px);
+    filter: drop-shadow(0px 20px 10px);
+    color: var(--color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

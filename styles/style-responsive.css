@@ -1,0 +1,341 @@
+/* Masaüstü (1200px ve üzeri) */
+@media (max-width: 1200px) {
+
+    /* ----------- BODY  CART   -------------- */
+    .carts {
+        flex-direction: column;
+    }
+
+    .header-body .profil-img {
+        min-width: 340px;
+        min-height: 340px;
+        max-width: 340px;
+        max-height: 340px;
+        transition: .3s;
+}
+
+    .header-body {
+        padding: 100px 0px;
+        flex-direction: column-reverse;
+    }
+    .abaut,
+    .profil-img {
+        margin-left: 30px;
+    }
+
+    * {
+        font-size: 1.0em;
+    }
+
+    .content-video h3 {
+        text-align: center;
+    }
+
+    .video-box {
+        flex-direction: column;
+    }
+
+    .video-box .img-box {
+        min-width: 100px;
+        aspect-ratio: 4/3;
+        min-height: 100px;
+        width: 100%;
+
+    }
+
+    .img-box img {
+        width: 100%;
+    }
+
+}
+
+/* Tablet (768px - 1199px arası) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* Tablet cihazlar için CSS buraya */
+}
+
+@media (max-width: 768px) {
+    .burger-icon-contanier {
+        padding: 5px 0px;
+    }
+
+    .burger-icon {
+        position: relative;
+        width: 50px;
+        height: 3px;
+        margin: 30px -0px 10px 0px;
+        background-color: rgb(0, 0, 0);
+        transition: .2s;
+    }
+
+    .burger-icon::before,
+    .burger-icon::after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 3px;
+        transition: .2s ease-in-out;
+    }
+
+    #Active:checked+label .burger-icon::before {
+        top: 10px;
+        background-color: red;
+        border-bottom: 5px solid red;
+        box-shadow: 0px 0px 5px 0px red;
+        transform: rotate(-45deg);
+    }
+
+    #Active:checked+label .burger-icon::after {
+        top: 10px;
+        background-color: red;
+        border-bottom: 5px solid red;
+        box-shadow: 0px 0px 5px 0px red;
+        transform: rotate(45deg);
+    }
+
+    #Active:checked+label .burger-icon {
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    .burger-icon::after {
+        top: 20px;
+    }
+
+    .burger-icon::before {
+        top: 10px;
+    }
+
+    body header nav {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        padding: 10px 0px;
+        margin-top: -30px;
+    }
+
+    body>header nav ul li a::before {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    body>header nav ul li:nth-child(1) a::before {
+        content: "Works";
+    }
+
+    body>header nav ul li:nth-child(2) a::before {
+        content: "Blog";
+    }
+
+    body>header nav ul li:nth-child(3) a::before {
+        content: "Contact";
+    }
+
+    #Active:checked~ul li a::before {
+        visibility: visible;
+        opacity: 1;
+        font-size: 0.7em;
+    }
+    
+
+    a:hover::before {
+        border-bottom: 2px solid black;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    /* ----------- BODY  CART   -------------- */
+
+    .body .carts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .body {
+        padding: 3%;
+    }
+
+    .body .carts-header {
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .body .carts-header>h3 {
+        display: none;
+    }
+
+    /* ---------->>  VIDEO CONTAINER  <<---------------- */
+
+
+    .content-video h3 {
+        text-align: center;
+    }
+
+    .video-box {
+        flex-direction: column;
+    }
+
+    .video-box .img-box {
+        min-width: 100px;
+        aspect-ratio: 4/3;
+        min-height: 100px;
+        width: 100%;
+
+    }
+
+    .img-box img {
+        width: 100%;
+    }
+
+    .abaut header {
+        font-size: .8em;
+    }
+
+    footer .icons {
+        gap: 20px;
+    }
+
+    .carts-header h2:nth-child(2) {
+        display: none;
+    }
+    footer .icons{
+        font-size: 2.5em;
+    }
+
+}
+
+
+
+/* Telefon (576px - 768px arası) */
+@media (max-width: 768px) and (min-width: 425px) {
+    body>header .header-body {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 50px 0px;
+        width: 100%;
+    }
+
+    .header-body .abaut {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abaut * {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+}
+
+/* ---------->>  VIDEO CONTAINER  <<---------------- */
+
+/* Küçük Telefon (576px ve altı) */
+@media (max-width: 425px) {
+    body > header nav ul {
+        font-size: .7em;
+        gap: 15px;
+    }
+    .burger-icon{
+        transform: scale(.6);
+        margin: 20px 0px 0px -10px;
+    }
+    body>header .header-body {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0px 0px;
+        width: 100%;
+    }
+    input[type="button"]{
+        transform: scale(.8);
+}
+
+    p br {
+        display: none;
+    }
+
+    .header-body .abaut {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abaut * {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .header-body .profil-img {
+        transform: scale(.5);
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+
+    .header-body .abaut header b {
+        font-size: 2.3em;
+    }
+
+    .header-body .abaut {
+        font-size: .85em;
+    }
+
+    .abaut b {
+        padding: 0% 5%;
+    }
+
+    /* ---------->>  VIDEO CONTAINER  <<---------------- */
+    .body-cart div h1:nth-child(2) {
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    .body-cart *, .body-cart,
+    .content-video, .video-box, footer{
+        gap: .5em !important;
+        padding: .5em !important;
+        margin: .4em !important;
+        transition: .1s;
+}
+
+    .carts-header {
+        font-size: .7em;
+    }
+
+
+    .carts header h1 {
+        font-size: 1.5em !important;
+    }
+
+    .carts div {
+        font-size: .7em !important;
+    }
+
+    .carts p {
+        font-size: 1.3em !important;
+    }
+
+    /* --------<< VIDEO CONTAINER  >>------ */
+
+    .content-video h3 {
+        font-size: 1.5em;
+    }
+
+    .video-box * {
+        font-size: 1em !important;
+    }
+
+    footer .icons {
+        font-size: 1.5em;
+    }
+
+    footer>i {
+        font-size: .7em !important;
+    }
+
+}

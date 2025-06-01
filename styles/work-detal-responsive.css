@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    *{
+        font-size: 14px;
+    }
+    .main-body-woek{
+        padding: 50px 2%;
+    }
+}
+@media (max-width: 425px){
+    *{
+        font-size: 11px;
+    }
+    .main-body-woek *{
+        margin: 1.5em 0px;
+    }
+    footer .icons{
+        gap: 15px;
+        font-size: 1em;
+    }
+
+}
